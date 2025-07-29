@@ -10,6 +10,10 @@ import {
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+
+  const topScroll=()=>{
+    scrollTo(0,0)
+  }
   return (
     <>
       {/* Horizontal Line */}
@@ -19,6 +23,7 @@ export default function Footer() {
         {/* Logo */}
         <Link to="/" className="mb-3">
           <img
+          onClick={topScroll}
             src={logo}
             alt="Gitpeek"
             className="h-10 w-auto object-contain"

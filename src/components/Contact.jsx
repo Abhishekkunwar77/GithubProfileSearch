@@ -21,6 +21,7 @@ export default function Contact() {
         () => {
           toast.success("Message sent successfully!");
           form.current.reset();
+          scrollTo(0,0)
         },
         (error) => {
           toast.error("Oops! Something went wrong!");
